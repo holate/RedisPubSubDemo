@@ -1,0 +1,8 @@
+### 订阅channel：1，唯一标识为：uuid
+GET http://localhost:80/test/sub?channel=1&key=uuid
+
+### 向channel：1发送消息：推送消息
+GET http://localhost:80/test/pub?channel=1&message=推送消息
+
+### 取消唯一标识为uuid对channel：1的订阅
+GET http://localhost:80/test/unSub?channel=1&key=uuid
